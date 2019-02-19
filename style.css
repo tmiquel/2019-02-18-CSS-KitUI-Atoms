@@ -43,27 +43,28 @@ font-family: "Museo W01_500", serif;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
+    text-align: center;
 }
 
 h2 {
-    font-size: 2.25em;
+    font-size: 2.25rem;
 }
 
 h3 {
-    font-size: 1.755em;
+    font-size: 1.755rem;
 }
 
 h4 {
-    font-size: 1.68em;
+    font-size: 1.68rem;
 }
 
 h5 {
-    font-size: 1.255em;
+    font-size: 1.255rem;
 }
 
 h6 {
-    font-size: 1.125em;
+    font-size: 1.125rem;
 }
 
 
@@ -72,6 +73,12 @@ h6 {
 
 body {
 font-family: "Museo Sans W01_500", sans-serif;
+text-align: justify;
+margin: 12px 12px 12px 12px ;
+}
+
+p {
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 .flex-around {
@@ -91,15 +98,15 @@ blockquote {
 button {
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1rem 2rem;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1rem;
   border-radius: 2px;
     -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
-  margin: 5px 5px;
+  margin: 0.5rem 0.5rem;
 }
 
 button.primary {
@@ -169,71 +176,71 @@ button.success {
 }
 
 button:hover {
-  box-shadow: 0 6px 6px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 0.4rem 0.4rem 0 rgba(0,0,0,0.24), 0 1rem 3.5rem 0 rgba(0,0,0,0.19);
 }
 
 button.outline-primary {
  color: #F4C577;
  background-color: white;
- border: 1px solid #F4C577;
+ border: 0.08rem solid #F4C577;
 
 }
 
 button.outline-secondary {
 color: #7F9AC2;  
   background-color: white;
-  border: 1px solid #7F9AC2;
+  border: 0.08rem solid #7F9AC2;
 }
 
 button.outline-lit {
   color: black;  
     background-color: white;
-    border: 1px solid #EFF0EB;
+    border: 0.08rem solid #EFF0EB;
 }
 
 button.outline-med {
   color: #A88D8D;   
   background-color: white;
-  border: 1px solid #A88D8D;
+  border: 0.08rem solid #A88D8D;
 }
 
 button.outline-dark {
   color: #2B2B3A;
   background-color: white;
-  border: 1px solid #2B2B3A;
+  border: 0.08rem solid #2B2B3A;
 }
 
 button.outline-warning {
 color: #fca623 ;  
   background-color: white;
-  border: 1px solid #fca623;
+  border: 0.08rem solid #fca623;
 }
 
 button.outline-danger {
   color: #f44336;  
     background-color: white;
-    border: 1px solid #f44336 ;
+    border: 0.08rem solid #f44336 ;
 }
 
 button.outline-info {
   color: #2b2b3a;   
   background-color: white;
-  border: 1px solid #2b2b3a;
+  border: 0.08rem solid #2b2b3a;
 }
 
 button.outline-success {
   color: #7eb65b ;
   background-color: white;
-  border: 1px solid #7eb65b ;
+  border: 0.08rem solid #7eb65b ;
 }
 
 button.sm {
-    padding: 10px 24px;
-    font-size: 0.8em;
+    padding: 0.8rem 1rem;
+    font-size: 0.8rem;
 }
 button.lg {
-    padding: 20px 50px;
-    font-size: 1.4em;
+    padding: 1.5rem 3rem;
+    font-size: 1.4rem;
 }
 
 
@@ -264,7 +271,7 @@ div.icons_gallery:hover {
 }
 
 div.icons_gallery img {
-  height: 4em;
+  height: 4rem;
 }
 
 .description {
@@ -339,7 +346,7 @@ input[type=button], input[type=submit], input[type=reset] {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -411,7 +418,7 @@ input[type=button], input[type=submit], input[type=reset] {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 1rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -470,9 +477,28 @@ input[type=button], input[type=submit], input[type=reset] {
   background: #7F9AC2;
 } 
 
+  /* Add shadows to create the "card" effect */
+ .card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 2px; 
+}
 
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
 
+/* Add some padding inside the card container */
+.card-body {
+  padding: 2px 16px;
+}
 
+.card-img-top{
+  max-width:100%;
+  height: auto;
+  border-radius: 2px 2px 0 0;
+}
 
 
 
