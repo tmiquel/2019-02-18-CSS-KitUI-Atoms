@@ -1,0 +1,130 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Thib - Eventbrite UI Kit based on Sketchy by Bootswatch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css" media="screen">
+    <link rel="stylesheet" href="custom_sketchy.css" media="screen">
+     <link rel="stylesheet" href="custom-thibaut.css" media="screen">
+    
+  </head>
+  <body>
+
+
+
+<div class="position-relative gradient-overlay-half-dark-v2 bg-img-hero" style="background-image: url(standard-banner.png); background-repeat: no-repeat;
+  background-size:cover; color: orange; font-size: 2rem">
+      <!-- Title -->
+
+
+<div class="d-lg-flex align-items-lg-center height-100vh--lg">
+        <div class="container text-center space-2 space-0--lg">
+          <h1 class="display-3 font-size-48--md-down text-white mb-4">
+            <strong class="u-text-animation u-text-animation--typing" style="color: orange;">Contact us
+          </h1>
+
+          <div class="w-md-75 w-lg-60 mx-md-auto" style="white-space: pre-wrap;">
+          </div>
+        </div>
+</div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/js/bootstrap.min.js" integrity="sha384-7aThvCh9TypR7fIc2HV4O/nFMVCBwyIUKL8XCtKE+8xgCgl/PQGuFsvShjr74PBp" crossorigin="anonymous"></script>
+
+<!-- JS Global Compulsory -->
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/jquery/dist/jquery.min.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/bootstrap/bootstrap.min.js"></script>
+
+  <!-- JS Implementing Plugins -->
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/hs-megamenu/src/hs.megamenu.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/jquery-validation/dist/jquery.validate.min.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/custombox/dist/custombox.min.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/custombox/dist/custombox.legacy.min.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/dzsparallaxer/dzsparallaxer.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/vendor/typed.js/lib/typed.min.js"></script>
+
+  <!-- JS Space -->
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/js/hs.core.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/js/components/hs.header.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/js/components/hs.unfold.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/js/components/hs.validation.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/js/helpers/hs.focus-state.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/js/components/hs.malihu-scrollbar.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/js/components/hs.modal-window.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/js/components/hs.show-animation.js"></script>
+  <script src="https://htmlstream.com/preview/space-v1.2/assets/js/components/hs.go-to.js"></script>
+
+  <!-- JS Plugins Init. -->
+  <script>
+    $(window).on('load', function () {
+      // initialization of HSMegaMenu component
+      $('.js-mega-menu').HSMegaMenu({
+        event: 'hover',
+        pageContainer: $('.container'),
+        breakpoint: 991,
+        hideTimeOut: 0
+      });
+    });
+
+    $(document).on('ready', function () {
+      // initialization of header
+      $.HSCore.components.HSHeader.init($('#header'));
+
+      // initialization of unfold component
+      $.HSCore.components.HSUnfold.init($('[data-unfold-target]'), {
+        afterOpen: function () {
+          $(this).find('input[type="search"]').focus();
+        }
+      });
+
+      // initialization of form validation
+      $.HSCore.components.HSValidation.init('.js-validate', {
+        rules: {
+          confirmPassword: {
+            equalTo: '#password'
+          }
+        }
+      });
+
+      // initialization of forms
+      $.HSCore.helpers.HSFocusState.init();
+
+      // initialization of malihu scrollbar
+      $.HSCore.components.HSMalihuScrollBar.init($('.js-scrollbar'));
+
+      // initialization of autonomous popups
+      $.HSCore.components.HSModalWindow.init('[data-modal-target]', '.js-signup-modal', {
+        autonomous: true
+      });
+
+      // initialization of show animations
+      $.HSCore.components.HSShowAnimation.init('.js-animation-link');
+
+      // initialization of text animation (typing)
+      var typed = new Typed(".u-text-animation.u-text-animation--typing", {
+        strings: ["Anywhere","Anytime"],
+        typeSpeed: 130,
+        loop: true,
+        backSpeed: 50,
+        backDelay: 3000
+      });
+
+      // initialization of go to
+      $.HSCore.components.HSGoTo.init('.js-go-to');
+    });
+  </script>
+
+
+
+  </body>
+</html>

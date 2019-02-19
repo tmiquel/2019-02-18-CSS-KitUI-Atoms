@@ -1,0 +1,80 @@
+ /* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+  }
+  body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+  }
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #2B3E50;
+  }
+  
+  
+  /* Custom page CSS
+  -------------------------------------------------- */
+  /* Not required for template or sticky footer method. */
+  
+  body > .container {
+    padding: 60px 15px 0;
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  code {
+    font-size: 80%;
+  }
+
+  .card {
+    margin: 2rem 2rem 2rem 2rem;
+    width: 300px;
+  }
+
+  .card img {
+    max-height: 200px;
+    width: auto;
+
+  }
+
+/*  #mainban {
+   min-height: 530px;
+   background-image: url("main-banner-2.png");
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position-x: top;
+}#mainban h1 {
+   font-size: 6em;
+   letter-spacing: 10px;
+   color: #DF691A
+;
+}#mainban p {
+   font-size: medium   ;
+   letter-spacing: 5px;
+   color: #ffffff
+;
+   text-align: center
+}#ban {
+   min-height: 400px;
+   background-image: url("standard-banner.png");
+   background-attachment: scroll;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-x: center;
+}#ban h1 {
+   font-size: 6em;
+   letter-spacing: 10px;
+   color: #DF691A
+;
+}*/
