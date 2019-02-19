@@ -1,4 +1,8 @@
 Collaborators : Thibaut / Raphael
 
-Version en production :
-https://grandsoleil.github.io/google_home/
+Exercice de front-end en Atomic Design
+
+#Fonctionnement
+
+Ouvrir la page index.html dans votre navigateur et accéder aux différents élements à partir de la barre de nav.
+
