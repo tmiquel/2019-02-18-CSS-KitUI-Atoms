@@ -47,6 +47,14 @@ html {
 
   }
 
+  .event-img {
+      background-size: 100%;
+      background-size: cover;
+      background-position: center center;
+      vertical-align: top;
+      background-image: url(event-1.jpg);
+  }
+
 /*  #mainban {
    min-height: 530px;
    background-image: url("main-banner-2.png");
